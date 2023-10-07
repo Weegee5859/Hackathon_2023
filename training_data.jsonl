@@ -1,2 +1,16 @@
-
-{[{"prompt" : "I'm sad","completion": "ok"}]}
+{
+  [
+    {
+      "prompt": "I'm sad",
+      "completion": "ok"
+    },
+    {
+      "prompt": "I'm not happy",
+      "completion": "so am i"
+    },
+    {
+      "prompt": "I'm psycho",
+      "completion": "perfect, keep it up"
+    }
+  ]
+}

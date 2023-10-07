@@ -1,3 +1,8 @@
+@font-face {
+	font-family: Crayon;
+	src: url(/static/fonts/ColoredCrayons.ttf);
+}
+
 body {
 	height: 100%;
 	width: 100%;
@@ -6,31 +11,61 @@ body {
 }
 
 p {
-	color: yellow;
+	color: black;
+	font-size: 3em;
+	font-family: Rockwell;
 }
 
-.mood_button { 
-	border-width: 	0px;
-	width: 	25vw;
+.mood_button {
+	border-width: 0px;
+	width: 25vw;
 	height: 10vh;
-	color: red;
-	border: 1px solid black;
+	color: white;
+	border: 1px solid rgba(0,0,0,0.5);
 	border-radius: 3%;
 	background-color: white;
 	margin-bottom: 1em;
-	margin-top: 1em;
-	font-size: 1em;
+	font-size: 2em;
 	font-weight: bolder;
 	margin-right: 1em;
-
+	box-shadow: 2px 2px 5px #aaaaaa;
+	font-family: 'Crayon';
 }
+
+.mood_button:hover {
+	transition: 0.3s ease-in-out;
+	border: 1px solid yellow;
+}
+
+.mood_button#one {
+	background-color: red
+}
+
+	.mood_button#two {
+		background-color: lawngreen
+	}
+
+	.mood_button#three {
+		background-color: blueviolet
+	}
+
+	.mood_button#four {
+		background-color: cornflowerblue
+	}
+
+	.mood_button#five {
+		background-color: darkorange
+	}
+
+	.mood_button#six {
+		background-color: deeppink
+	}
 
 .mood_button_container {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: 	wrap;
 	justify-content: space-around;
-	background-color: green;
 	height: 70vh;
 }
 
@@ -39,8 +74,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	border: 2px solid red;
-	background-color: green;
+	border-bottom: 2px solid black;
 	height: 20vh;
 }
 
@@ -50,4 +84,61 @@ p {
 	height: 5em;
 	background-color: dodgeblue;
 	border: 2px blue;
+}
+
+.input_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.input_container p {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+}
+input {
+	width: 90%;
+}
+
+.mood_button_container div {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.mood_button_container img {
+	height 6em;
+	width: 6em;
+}
+
+.top.speech::after {
+	/* (C1-1) UP TRIANGLE */
+	border-bottom-color: #a53d38;
+	border-top: 0;
+	/* (C1-2) POSITION AT TOP */
+	top: -20px;
+	left: 50%;
+	margin-left: -20px;
+}
+.speech::after {
+	/* (B1-1) ATTACH TRANSPARENT BORDERS */
+	content: "";
+	border: 20px solid transparent;
+	/* (B1-2) NECESSARY TO POSITION THE "TAIL" */
+	position: absolute;
+}
+
+.character_bubble_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.character_bubble_container h1 {
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 4px;
 }

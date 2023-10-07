@@ -7,20 +7,45 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}"/>
 </head>
 <body>
-  <div class="character_container">
-    <div class="character" id="character_idle">
-      hello
+    <div class="character_container">
+        <p>SEEK</p>
+        <img src="{{ url_for('static', filename='images/character_blue_small.png') }}">
+        <p>HELP</p>
     </div>
-  </div>
+    <div class="character_bubble_container">
+        <h1 class="speech top"> How are you feeling today?</h1>
+    </div>
+    <div class="mood_button_container">
 
-  <div class="mood_button_container"> 
-    <button class="mood_button">Happy</button>
-    <button class="mood_button">Sad</button>
-    <button class="mood_button">Lonely</button>
-    <button class="mood_button">Empty</button>
-    <button class="mood_button">Psycho</button>
-    <button class="mood_button">etc...</button>
-  </div>
-  
+        <div>
+            <img src="{{ url_for('static', filename='images/image-1.png') }}">
+            <button class="mood_button" id="one">Unhappy</button>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/image-2.png') }}">
+            <button class="mood_button" id="two">Sad</button>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/image-3.png') }}">
+            <button class="mood_button" id="three">Lonely</button>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/image-4.png') }}">
+            <button class="mood_button" id="four">Empty</button>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/image-5.png') }}">
+            <button class="mood_button" id="five">Psycho</button>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/image-6.png') }}">
+            <button class="mood_button" id="six">Angry</button>
+        </div>
+    </div>
+    <div class="input_container">
+        <p>How are you feeling today?</p>
+        <input />
+    </div>
+
 </body>
 </html>
