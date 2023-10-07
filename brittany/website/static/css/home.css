@@ -1,0 +1,53 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	color: yellow;
+}
+
+.mood_button { 
+	border-width: 	0px;
+	width: 	25vw;
+	height: 10vh;
+	color: red;
+	border: 1px solid black;
+	border-radius: 3%;
+	background-color: white;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	font-size: 1em;
+	font-weight: bolder;
+	margin-right: 1em;
+
+}
+
+.mood_button_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: 	wrap;
+	justify-content: space-around;
+	background-color: green;
+	height: 70vh;
+}
+
+.character_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border: 2px solid red;
+	background-color: green;
+	height: 20vh;
+}
+
+.character {
+	border: black;
+	width: 5em;
+	height: 5em;
+	background-color: dodgeblue;
+	border: 2px blue;
+}
