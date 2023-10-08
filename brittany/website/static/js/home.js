@@ -4,6 +4,7 @@ $(document).ready(function () {
     var cat_open = false;
     var active = false;
     var audio = new Audio('/static/sounds/meow-1.mp3');
+    var frog = new Audio('static/sounds/frog.mp3');
 
     const audios = [
         '/static/sounds/meow-1.mp3',
@@ -65,12 +66,13 @@ $(document).ready(function () {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    function animateCat() {
+    function animateCat(flag) {
         var cat = document.getElementById("cat");
         if (cat_open) {
             cat.src = "static/images/character_blue_small.png";
             cat_open = false
-            playRandomAudio()
+            if(flag == 0)
+                playRandomAudio()
         } else {
             cat.src = "static/images/character_blue_small_2.png";
             cat_open = true
@@ -85,17 +87,24 @@ $(document).ready(function () {
 
 
     async function setMessageBox(message = "Hello!") {
+        var flag = 0;
+        if(Math.random() * 10 > 0){
+            flag = 1
+        }
         if (active) { return }
         active = true;
         console.log(message);
         message_box.innerHTML = "";
         var current_message = "";
+        if(flag == 1)
+            frog.play();
         for (i = 0; i < message.length; i++) {
             current_message += message.charAt(i);
             message_box.innerHTML = current_message;
-            animateCat();
+            animateCat(flag);
             await sleep(50);
         }
+            frog.pause();
         active = false;
         closeCatMouth()
     }

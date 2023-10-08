@@ -14,12 +14,12 @@ def gpt(input):
                 {"role": "user", "content": message},
             )
             chat = openai.ChatCompletion.create(
-                model="ft:gpt-3.5-turbo-0613:personal::87N7eqKL",
+                model="ft:gpt-3.5-turbo-0613:personal::87PDCxlf",
                 messages=messages
             )
         reply = chat.choices[0].message.content
         print(f"ChatGPT: {reply}")
-        messages.append({"role": "assistant", "content": reply})
         return reply
-    
+
+
 gpt("Im feeling sad")
