@@ -1,21 +1,2 @@
-<<<<<<< Updated upstream
-{
-  [
-    {
-      "prompt": "I'm sad",
-      "completion": "ok"
-    },
-    {
-      "prompt": "I'm not happy",
-      "completion": "so am i"
-    },
-    {
-      "prompt": "I'm psycho",
-      "completion": "perfect, keep it up"
-    }
-  ]
-}
-=======
 {"messages": [{"role": "user", "content": "I'm lonely"}, {"role": "assistant", "content": "sure bud"}]}
 {"messages": [{"role": "user", "content": "I'm lonely"}, {"role": "assistant", "content": "sure bud"}]}
->>>>>>> Stashed changes
