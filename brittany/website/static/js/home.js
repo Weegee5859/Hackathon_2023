@@ -46,10 +46,12 @@ $(document).ready(function () {
     }
 
     function playRandomAudio() {
-        var random_audio = audios[Math.floor(Math.random() * audios.length)];
+        if((Math.random() * 10) > 7){
+            var random_audio = audios[Math.floor(Math.random() * audios.length)];
 
-        audio = new Audio(random_audio);
-        audio.play();
+            audio = new Audio(random_audio);
+            audio.play();
+        }
     }
 
     function randomPrompt(category = "unhappy") {
@@ -92,7 +94,7 @@ $(document).ready(function () {
             current_message += message.charAt(i);
             message_box.innerHTML = current_message;
             animateCat();
-            await sleep(100);
+            await sleep(50);
         }
         active = false;
         closeCatMouth()
