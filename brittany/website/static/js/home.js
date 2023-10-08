@@ -4,6 +4,7 @@ $(document).ready(function () {
     var cat_open = false;
     var active = false;
     var audio = new Audio('/static/sounds/meow-1.mp3');
+    var frog = new Audio('static/sounds/frog.mp3');
 
     const audios = [
         '/static/sounds/meow-1.mp3',
@@ -21,17 +22,17 @@ $(document).ready(function () {
         "sad": [
             "Don't be sad, because sad backward is das and das not good.",
             "If you attempt to rob a bank, you will have no trouble with rent or bills for the next ten years, whether you are successful or not.",
-            "bbbbbbbbbbbbb"
+            "Cheer up, life is too short to deal with sadness."
         ],
         "lonely": [
-            "Discuss your feelings to your stuff animal, Mr. Snuffles.",
+            "Discuss your feelings to your stuff animal, Mr. Snuggles.",
             "Yell in an empty room and argue with your echo.",
-            "lonely3"
+            "Go meet new people and have fun socializing."
         ],
         "empty": [
             "You should probably get something to eat.",
-            "empty2",
-            "empty3"
+            "It's okay, so am I.",
+            "Impulse purchase the next big thing."
         ],
         "psycho": [
             "If you hear weird noises in the night, simply make weirder noises to assert dominance.",
@@ -39,17 +40,19 @@ $(document).ready(function () {
             "Great work, keep it up, I'm proud of you."
         ],
         "angry": [
-            "Carry a fork with you. If someone tries to rob you, pull it out of your pocket and say, ‘thank you Lord for this meal I’m about to have’ and charge at them with the fork.",
+            "Carry a fork with you. If someone tries to rob you, pull it out of your pocket and say, thank you Lord for this meal I'm about to have and charge at them with the fork.",
             "Go on a rampage.",
-            "angry3"
+            "Direct that angry towards passion, play music, do homework, or simply go on a walk."
         ]
     }
 
     function playRandomAudio() {
-        var random_audio = audios[Math.floor(Math.random() * audios.length)];
+        if((Math.random() * 10) > 7){
+            var random_audio = audios[Math.floor(Math.random() * audios.length)];
 
-        audio = new Audio(random_audio);
-        audio.play();
+            audio = new Audio(random_audio);
+            audio.play();
+        }
     }
 
     function randomPrompt(category = "unhappy") {
@@ -63,12 +66,13 @@ $(document).ready(function () {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    function animateCat() {
+    function animateCat(flag) {
         var cat = document.getElementById("cat");
         if (cat_open) {
             cat.src = "static/images/character_blue_small.png";
             cat_open = false
-            playRandomAudio()
+            if(flag == 0)
+                playRandomAudio()
         } else {
             cat.src = "static/images/character_blue_small_2.png";
             cat_open = true
@@ -83,17 +87,24 @@ $(document).ready(function () {
 
 
     async function setMessageBox(message = "Hello!") {
+        var flag = 0;
+        if(Math.random() * 10 > 0){
+            flag = 1
+        }
         if (active) { return }
         active = true;
         console.log(message);
         message_box.innerHTML = "";
         var current_message = "";
+        if(flag == 1)
+            frog.play();
         for (i = 0; i < message.length; i++) {
             current_message += message.charAt(i);
             message_box.innerHTML = current_message;
-            animateCat();
-            await sleep(100);
+            animateCat(flag);
+            await sleep(50);
         }
+            frog.pause();
         active = false;
         closeCatMouth()
     }
