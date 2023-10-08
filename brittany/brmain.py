@@ -4,5 +4,6 @@ app = create_app()
 
 if __name__ == '__main__': #only if run file
     #run flask application to start up web server
-    app.run(port=12000, debug=True) #changes in code with rerun webserver
-    #False for production
+    app.run(port=12000, debug=True) 
+    #True = changes in code with rerun webserver
+    #False = production
