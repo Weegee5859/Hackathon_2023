@@ -6,6 +6,7 @@ openai.api_key = "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"
 
 messages = [{"role": "system", "content":
              "You are a intelligent assistant."}]
+
 while True:
     message = input("User : ")
     if message:
