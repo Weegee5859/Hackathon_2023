@@ -98,6 +98,20 @@ p {
 	text-align: center;
 	font-size: 1.2em;
 }
+
+.input_container div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+	.input_container div button {
+		height: 2em;
+		width: 2em;
+		background-color: lightgreen;
+		border-width: 0px;
+		box-shadow: 2px 2px 5px #aaaaaa;
+	}
 input {
 	width: 90%;
 	display: block;
@@ -150,6 +164,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	margin: .5em;
+	border-top: 2px solid black;
 }
 footer a {
 	font-size: 1.2em;

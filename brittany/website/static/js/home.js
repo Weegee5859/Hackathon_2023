@@ -125,5 +125,30 @@ $(document).ready(function () {
     angrybtn.onclick = function () {
         setMessageBox(randomPrompt('angry'));
         audio.play();
-    }    
+    }
+
+    // GPT Call
+    function getGptResponse() {
+        myinput = $('#gpt_input').val()
+        var server_data = [
+            { "input": myinput }
+        ]
+        $.ajax({
+            type: "POST",
+            url: "/gpt_call",
+            data: JSON.stringify(server_data),
+            contentType: "application/json",
+            dataType: 'json',
+            success: function (result) {
+                console.log("Result:");
+                console.log(result);
+                setMessageBox(result["processed"]);
+            } 
+        });
+    }
+
+    var gptbtn = document.getElementById("gpt_button");
+    gptbtn.onclick = function () {
+        getGptResponse();
+    }
 });

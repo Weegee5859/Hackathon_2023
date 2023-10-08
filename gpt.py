@@ -21,5 +21,4 @@ def gpt(input):
         print(f"ChatGPT: {reply}")
         messages.append({"role": "assistant", "content": reply})
         return reply
-    
-gpt("Im feeling sad")
+
