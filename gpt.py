@@ -15,7 +15,7 @@ def gpt(input):
                 {"role": "user", "content": message},
             )
             chat = openai.ChatCompletion.create(
-                model="ft:gpt-3.5-turbo-0613:personal::87GPAaIE",
+                model="ft:gpt-3.5-turbo-0613:personal::87N7eqKL",
                 messages=messages
             )
         reply = chat.choices[0].message.content
