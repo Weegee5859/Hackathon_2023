@@ -24,5 +24,4 @@ fine_tuning_job = openai.FineTuningJob.create(
     # max_tokens = max_tokens
 )
 
-job_id = fine_tuning_job["id"]
-print(f"Fine-tuning job created with ID: {job_id}")
+print(fine_tuning_job)
