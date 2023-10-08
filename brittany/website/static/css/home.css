@@ -91,6 +91,7 @@ p {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	text-align: center;
 }
 .input_container p {
 	width: 100%;
@@ -99,6 +100,8 @@ p {
 }
 input {
 	width: 90%;
+	display: block;
+	margin: auto;
 }
 
 .mood_button_container div {
@@ -141,4 +144,14 @@ input {
 	border: 2px solid black;
 	padding: 5px;
 	border-radius: 4px;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	margin: .5em;
+}
+footer a {
+	font-size: 1.2em;
+	padding: .3em;
 }
