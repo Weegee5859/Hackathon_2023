@@ -1,5 +1,4 @@
 import openai
-import random
 import os
 
 openai.api_key = "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"
