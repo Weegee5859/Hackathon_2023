@@ -15,32 +15,32 @@ $(document).ready(function () {
     const prompts = {
         "unhappy": [
             "If you are not happy where you are, move. You are not a tree.",
-            "If you attempt to rob a bank, you will have no trouble with rent or bills for the next ten years, whether you are successful or not.",
+            "If you swim with a friend, your chances of getting eaten by a shark will drop by 50%.",
             "Don't give up your dreams, keep on sleeping."
         ],
         "sad": [
             "Don't be sad, because sad backward is das and das not good.",
-            "aaaaaaaaaaaaaaa",
+            "If you attempt to rob a bank, you will have no trouble with rent or bills for the next ten years, whether you are successful or not.",
             "bbbbbbbbbbbbb"
         ],
         "lonely": [
-            "lonely1",
-            "lonely2",
+            "Discuss your feelings to your stuff animal, Mr. Snuffles.",
+            "Yell in an empty room and argue with your echo.",
             "lonely3"
         ],
         "empty": [
-            "empty1",
+            "You should probably get something to eat.",
             "empty2",
             "empty3"
         ],
         "psycho": [
             "If you hear weird noises in the night, simply make weirder noises to assert dominance.",
-            "For $1, you can buy a candy bar from a vending machine. For $2, you can buy a brick, and get all the candy in the vending machine.",
-            "If you swim with a friend, your chances of getting eaten by a shark will drop by 50%."
+            "Go back to playing league.",
+            "Great work, keep it up, I'm proud of you."
         ],
         "angry": [
             "Carry a fork with you. If someone tries to rob you, pull it out of your pocket and say, ‘thank you Lord for this meal I’m about to have’ and charge at them with the fork.",
-            "angry2",
+            "Go on a rampage.",
             "angry3"
         ]
     }
