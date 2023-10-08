@@ -88,7 +88,7 @@ $(document).ready(function () {
 
     async function setMessageBox(message = "Hello!") {
         var flag = 0;
-        if(Math.random() * 10 > 0){
+        if(Math.random() * 10 > 9){
             flag = 1
         }
         if (active) { return }
@@ -104,7 +104,7 @@ $(document).ready(function () {
             animateCat(flag);
             await sleep(50);
         }
-            frog.pause();
+        frog.pause();
         active = false;
         closeCatMouth()
     }
