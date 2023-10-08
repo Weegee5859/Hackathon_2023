@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 {
   [
     {
@@ -14,3 +15,7 @@
     }
   ]
 }
+=======
+{"messages": [{"role": "user", "content": "I'm lonely"}, {"role": "assistant", "content": "sure bud"}]}
+{"messages": [{"role": "user", "content": "I'm lonely"}, {"role": "assistant", "content": "sure bud"}]}
+>>>>>>> Stashed changes
