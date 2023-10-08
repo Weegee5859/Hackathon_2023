@@ -21,17 +21,17 @@ $(document).ready(function () {
         "sad": [
             "Don't be sad, because sad backward is das and das not good.",
             "If you attempt to rob a bank, you will have no trouble with rent or bills for the next ten years, whether you are successful or not.",
-            "bbbbbbbbbbbbb"
+            "Cheer up, life is too short to deal with sadness."
         ],
         "lonely": [
-            "Discuss your feelings to your stuff animal, Mr. Snuffles.",
+            "Discuss your feelings to your stuff animal, Mr. Snuggles.",
             "Yell in an empty room and argue with your echo.",
-            "lonely3"
+            "Go meet new people and have fun socializing."
         ],
         "empty": [
             "You should probably get something to eat.",
-            "empty2",
-            "empty3"
+            "It's okay, so am I.",
+            "Impulse purchase the next big thing."
         ],
         "psycho": [
             "If you hear weird noises in the night, simply make weirder noises to assert dominance.",
@@ -39,9 +39,9 @@ $(document).ready(function () {
             "Great work, keep it up, I'm proud of you."
         ],
         "angry": [
-            "Carry a fork with you. If someone tries to rob you, pull it out of your pocket and say, ‘thank you Lord for this meal I’m about to have’ and charge at them with the fork.",
+            "Carry a fork with you. If someone tries to rob you, pull it out of your pocket and say, thank you Lord for this meal I'm about to have and charge at them with the fork.",
             "Go on a rampage.",
-            "angry3"
+            "Direct that angry towards passion, play music, do homework, or simply go on a walk."
         ]
     }
 
