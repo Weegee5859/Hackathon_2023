@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}" />
 </head>
+<!-- Jquery/Ajax -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
 <body>
     <div class="character_container">
         <p>SEEK</p>
-        <img src="{{ url_for('static', filename='images/character_blue_small.png') }}">
+        <img id="cat" src="{{ url_for('static', filename='images/character_blue_small.png') }}">
         <p>HELP</p>
     </div>
     <div class="character_bubble_container">
-        <h1 class="speech top"> How are you feeling today?</h1>
+        <h1 id="message_box" class="speech top"> How are you feeling today?</h1>
     </div>
     <div class="mood_button_container">
 
         <div>
             <img src="{{ url_for('static', filename='images/image-1.png') }}">
-            <button class="mood_button" id="one">Unhappy</button>
+            <button class="mood_button" id="one" onclick="setMessageBox(randomPrompt('unhappy'));">Unhappy</button>
         </div>
         <div>
             <img src="{{ url_for('static', filename='images/image-2.png') }}">
