@@ -8,3 +8,4 @@ There are buttons stating different emotional states that will give random respo
 On a serious note, if anyone needs to have someone to reach out to and listen, there are resources provided below. 
 
 To install Flask, use command: pip install flask 
+Run the program by navigating to main > main.py > run

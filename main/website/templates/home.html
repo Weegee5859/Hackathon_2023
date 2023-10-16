@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}" />
+</head>
+<!-- Jquery/Ajax -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+<body>
+    <div class="character_container">
+        <p>SEEK</p>
+        <img id="cat" src="{{ url_for('static', filename='images/character_blue_small.png') }}">
+        <p>HELP</p>
+    </div>
+    <div class="character_bubble_container">
+        <h1 id="message_box" class="speech top"> How are you feeling today?</h1>
+    </div>
+    <div class="mood_button_container">
+
+        <div>
+            <img src="{{ url_for('static', filename='images/image-1.png') }}">
+            <button  class="mood_button" id="one">Unhappy</button>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/image-2.png') }}">
+            <button  class="mood_button" id="two">Sad</button>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/image-3.png') }}">
+            <button  class="mood_button" id="three">Lonely</button>
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='images/image-4.png') }}">
+            <button  class="mood_button" id="four">Empty</button>
+        </div>
+        <div>
+            <img  src="{{ url_for('static', filename='images/image-5.png') }}">
+            <button class="mood_button" id="five">Psycho</button>
+        </div>
+        <div>
+            <img  src="{{ url_for('static', filename='images/image-6.png') }}">
+            <button class="mood_button" id="six">Angry</button>
+        </div>
+    </div>
+    <!--
+    <div class="input_container">
+        <p>How are you feeling today?</p>
+        <input />
+    </div>
+    -->
+
+    <footer>
+        <a href="https://www.betterhelp.com/">BetterHelp</a>
+        <a href="https://ucfhealth.com/">UCF Health</a>        
+    </footer>
+</body>
+</html>

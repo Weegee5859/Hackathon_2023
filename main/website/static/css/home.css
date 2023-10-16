@@ -1,0 +1,157 @@
+@font-face {
+	font-family: Crayon;
+	src: url(/static/fonts/ColoredCrayons.ttf);
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	color: black;
+	font-size: 3em;
+	font-family: Rockwell;
+}
+
+.mood_button {
+	border-width: 0px;
+	width: 25vw;
+	height: 10vh;
+	color: white;
+	border: 1px solid rgba(0,0,0,0.5);
+	border-radius: 3%;
+	background-color: white;
+	margin-bottom: 1em;
+	font-size: 2em;
+	font-weight: bolder;
+	margin-right: 1em;
+	box-shadow: 2px 2px 5px #aaaaaa;
+	font-family: 'Crayon';
+}
+
+.mood_button:hover {
+	transition: 0.3s ease-in-out;
+	border: 1px solid yellow;
+}
+
+.mood_button#one {
+	background-color: red
+}
+
+	.mood_button#two {
+		background-color: lawngreen
+	}
+
+	.mood_button#three {
+		background-color: blueviolet
+	}
+
+	.mood_button#four {
+		background-color: cornflowerblue
+	}
+
+	.mood_button#five {
+		background-color: darkorange
+	}
+
+	.mood_button#six {
+		background-color: deeppink
+	}
+
+.mood_button_container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: 	wrap;
+	justify-content: space-around;
+	height: 70vh;
+}
+
+.character_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	border-bottom: 2px solid black;
+	height: 20vh;
+}
+
+.character {
+	border: black;
+	width: 5em;
+	height: 5em;
+	background-color: dodgeblue;
+	border: 2px blue;
+}
+
+.input_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+.input_container p {
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+}
+input {
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+.mood_button_container div {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+}
+
+.mood_button_container img {
+	height 6em;
+	width: 6em;
+}
+
+.top.speech::after {
+	/* (C1-1) UP TRIANGLE */
+	border-bottom-color: #a53d38;
+	border-top: 0;
+	/* (C1-2) POSITION AT TOP */
+	top: -20px;
+	left: 50%;
+	margin-left: -20px;
+}
+.speech::after {
+	/* (B1-1) ATTACH TRANSPARENT BORDERS */
+	content: "";
+	border: 20px solid transparent;
+	/* (B1-2) NECESSARY TO POSITION THE "TAIL" */
+	position: absolute;
+}
+
+.character_bubble_container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.character_bubble_container h1 {
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 4px;
+}
+
+footer {
+	display: flex;
+	flex-direction: row;
+	margin: .5em;
+}
+footer a {
+	font-size: 1.2em;
+	padding: .3em;
+}
